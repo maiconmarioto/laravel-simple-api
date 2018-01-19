@@ -87,10 +87,7 @@ class UserController extends Controller
             'pass' => 'required|max:255|min:3'
         ];
     }
-
-    private function idMessage() 
-    {
-        return response()->json(['status' => false, 'msg' => 'O campo id é obrigatório.'], 400);
-    }
+    
+    
     
 }
